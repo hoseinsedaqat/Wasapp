@@ -56,26 +56,28 @@
       </aside>
       <!-- Sidebar Messages -->
       <aside class="bg-base-300">
-        <article v-for="(x) in 15" :key="(x)">
-          <div>
-            <img
-              src="@/assets/images/Hosein_Sedaqat.jpg"
-              alt="User-Profile"
-              class="w-12 h-12 rounded-full"
-            />
+        <router-link to="/chat/1">
+          <article v-for="x in 15" :key="x">
             <div>
-              <h3 class="text-lg">This Hosein 🤞🍕🍍</h3>
-              <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+              <img
+                src="@/assets/images/Hosein_Sedaqat.jpg"
+                alt="User-Profile"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <h3 class="text-lg">This Hosein 🤞🍕🍍</h3>
+                <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-xs">9:21</p>
-          </div>
-        </article>
+            <div>
+              <p class="text-xs">9:21</p>
+            </div>
+          </article>
+        </router-link>
       </aside>
     </section>
-    <section id="app-container" class="bg-base-300">
-        <RouterView />
+    <section id="app-container" class="bg-base-100">
+      <RouterView />
     </section>
   </div>
 </template>

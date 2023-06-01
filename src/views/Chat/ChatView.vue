@@ -1,29 +1,75 @@
 <script setup lang="ts"></script>
-
 <template>
-  <section id="whatsapp" class="p-1">
-    <main class="my-5">
-      <img
-        src="@/assets/images/WhatsApp_Connected.jpg"
-        alt="Connected_Whatsapp"
-        class="w-40 h-40 rounded-full"
-      />
-    </main>
-    <main>
-      <h1 class="text-2xl">Keep your phone connected</h1>
-      <p>
-        WhatsApp connects to your phone to sync messages. To reduce data usage, connect
-        your phone to Wi-Fi.
-      </p>
-    </main>
-    <main>
-      <p class="text-sm flex items-center">
-        <icon-components
-          :class="'bi bi-laptop mx-2 text-lg cursor-pointer'"
-        ></icon-components
-        >WhatsApp is available for Mac.
-        <span class="text-accent cursor-pointer mx-1"> Get it here</span>
-      </p>
-    </main>
+  <section id="chat">
+    <aside class="bg-base-200">
+      <main>
+        <img
+          src="@/assets/images/Hosein_Sedaqat.jpg"
+          alt="User-Profile"
+          class="w-12 h-12 rounded-full"
+        />
+        <div>
+            <p>Hosein Sedaqat</p>
+            <p class="text-xs">online</p>
+        </div>
+      </main>
+      <main>
+        <div>
+          <icon-components
+            :class="'bi bi-search text-xl cursor-pointer'"
+          ></icon-components>
+        </div>
+        <div class="dropdown dropdown-end">
+          <icon-components
+            tabindex="0"
+            :class="'bi bi-three-dots-vertical text-xl cursor-pointer'"
+          ></icon-components>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Contact Info</a></li>
+            <li><a>Select Message</a></li>
+            <li><a>Mute notifications</a></li>
+            <li><a>Clear message</a></li>
+            <li><a>Delete message</a></li>
+          </ul>
+        </div>
+      </main>
+    </aside>
+    <aside>
+      <div class="chat chat-start" v-for="x in 5" :key="x">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="@/assets/images/Hosein_Sedaqat.jpg" />
+          </div>
+        </div>
+        <div class="chat-bubble">You were the Chosen One!</div>
+        <div class="chat-footer">
+          <time class="text-xs text-white">12:45</time>
+        </div>
+      </div>
+      <div class="chat chat-end" v-for="x in 5" :key="x">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="@/assets/images/Hosein_Sedaqat.jpg" />
+          </div>
+        </div>
+        <div class="chat-bubble">I hate you!</div>
+        <div class="chat-footer">
+          <time class="text-xs text-white">12:46</time>
+        </div>
+      </div>
+    </aside>
+    <aside class="bg-base-200">
+      <main>
+        <div>
+          <icon-components :class="'bi bi-search cursor-pointer'"></icon-components>
+        </div>
+        <div>
+          <input type="text" placeholder="Search or start new chat" />
+        </div>
+      </main>
+    </aside>
   </section>
 </template>

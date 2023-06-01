@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    border-radius: 5px 5px 0 0;
+    /* border-radius: 5px 5px 0 0; */
 }
 
 #home-container aside:nth-child(1) main:nth-child(2) {
@@ -96,7 +96,7 @@
 /* app */
 
 #app-container {
-    overflow-y: scroll;
+    overflow-y: hidden;
     width: 70%;
     height: 100vh;
 
@@ -106,15 +106,87 @@
 /* whatsapp */
 
 #whatsapp {
+    max-width: 600px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 #whatsapp main:nth-child(2) p {
     margin: 0.5rem 0;
-    padding: 0 15rem;
+}
+
+/* Chat */
+
+#chat aside:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+#chat aside:nth-child(1) main:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+#chat aside:nth-child(1) main:nth-child(1) div {
+    margin: 0 1rem;
+}
+
+#chat aside:nth-child(1) main:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#chat aside:nth-child(1) main:nth-child(2) div {
+    margin: 0 1rem;
+}
+
+#chat aside:nth-child(2) {
+    background: url('@/assets/images/bg-chat-dark.png');
+    background-size: contain;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+#chat aside:nth-child(3) {
+    /* margin: 1rem 0 0 0; */
+    padding: 1.5rem;
+}
+
+#chat aside:nth-child(3) main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #323739;
+    padding: 0 0.5rem;
+}
+
+#chat aside:nth-child(3) main div:nth-child(2) {
+    width: 100%;
+}
+
+#chat aside:nth-child(3) main input {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #323739;
+    padding: 0.3rem 0.7rem;
+    font-size: 14px;
+}
+
+#chat aside:nth-child(3) main input:focus {
+    outline: none;
+}
+
+@media screen and (max-width:1500px) {
+    #chat aside:nth-child(2) {
+        height: 77vh;
+    }
 }

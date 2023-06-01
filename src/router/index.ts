@@ -12,9 +12,14 @@ const router = createRouter({
     },
     {
       path: '/web/whatsapp',
+      name: 'WebView',
+      component: async () => await import('@/views/Web/WebView.vue')
+    },
+    {
+      path: '/chat/:id',
       name: 'ChatView',
       component: async () => await import('@/views/Chat/ChatView.vue')
-    }
+    },
   ]
 })
 
