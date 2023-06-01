@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { redirectRoute } from '@/utils/redirectRoute';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -6,7 +7,8 @@ const router = createRouter({
     {
       path: '/',
       name: 'HomeView',
-      component: async () => await import('@/views/Home/HomeView.vue')
+      beforeEnter:redirectRoute,
+      component: async () => await import('@/views/Home/HomeView.vue'),
     },
     {
       path: '/web/whatsapp',
