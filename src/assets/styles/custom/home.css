@@ -98,7 +98,7 @@
 #app-container {
     overflow-y: hidden;
     width: 70%;
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -123,6 +123,7 @@
 /* Chat */
 
 #chat aside:nth-child(1) {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -157,7 +158,7 @@
 
 #chat aside:nth-child(3) {
     /* margin: 1rem 0 0 0; */
-    padding: 1.5rem;
+    padding: 1.7rem;
 }
 
 #chat aside:nth-child(3) main {
@@ -185,8 +186,46 @@
     outline: none;
 }
 
-@media screen and (max-width:1500px) {
+
+@media screen and (min-height:780px) {
     #chat aside:nth-child(2) {
-        height: 77vh;
+        height: 82vh;
+    }
+}
+
+@media screen and (max-height:779px) {
+    #chat aside:nth-child(2) {
+        height: 80vh;
+    }
+}
+
+
+@media screen and (max-height:700px) {
+    #chat aside:nth-child(2) {
+        height: 78vh;
+    }
+}
+
+@media screen and (max-height:600px) {
+    #chat aside:nth-child(2) {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-height:500px) {
+    #chat aside:nth-child(2) {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-height:400px) {
+    #chat aside:nth-child(2) {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-height:300px) {
+    #chat aside:nth-child(2) {
+        height: 50vh;
     }
 }
