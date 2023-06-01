@@ -12,7 +12,7 @@ onMounted(() => {
   }, 50);
 
   setTimeout(() => {
-    router.push("/home");
+    router.push("/web/whatsapp");
   }, 5000);
 });
 </script>
