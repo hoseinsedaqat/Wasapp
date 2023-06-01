@@ -56,7 +56,7 @@
       </aside>
       <!-- Sidebar Messages -->
       <aside class="bg-base-300">
-        <article v-for="(x,idx) in 15" :key="(x,idx)">
+        <article v-for="(x) in 15" :key="(x)">
           <div>
             <img
               src="@/assets/images/Hosein_Sedaqat.jpg"
