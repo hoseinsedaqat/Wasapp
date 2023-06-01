@@ -152,13 +152,19 @@
 #chat aside:nth-child(2) {
     background: url('@/assets/images/bg-chat-dark.png');
     background-size: contain;
-    overflow-y: auto;
-    height: 80vh;
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 1rem 1rem 10rem 1rem;
+    position: relative;
 }
 
 #chat aside:nth-child(3) {
+    width: 70%;
     /* margin: 1rem 0 0 0; */
-    padding: 1.7rem;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    /* z-index: 10; */
 }
 
 #chat aside:nth-child(3) main {
@@ -187,7 +193,7 @@
 }
 
 
-@media screen and (min-height:780px) {
+/* @media screen and (min-height:780px) {
     #chat aside:nth-child(2) {
         height: 82vh;
     }
@@ -228,4 +234,4 @@
     #chat aside:nth-child(2) {
         height: 50vh;
     }
-}
+} */
