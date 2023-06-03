@@ -1,30 +1,29 @@
 <script setup>
-import { inbox_message } from "@/data/inboxMessage";
+import { chats } from "@/stores/chats";
 import { watch, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute();
 const user_chats = ref({});
+const useChats = chats();
 
 watch(
   () => route.params.id,
   () => {
-    console.log(`MyCoolComponent - watch route.name changed to ${route.params.id}`);
-    inbox_message.forEach((inbox) => {
+    // console.log(`MyCoolComponent - watch route.name changed to ${route.params.id}`);
+    useChats.inbox_message.forEach((inbox) => {
       if (inbox.userId === route.params.id) {
         user_chats.value = inbox;
       }
     });
-    console.log(user_chats.value);
   }
 );
 
 onMounted(() => {
-  inbox_message.forEach((inbox) => {
+  useChats.inbox_message.forEach((inbox) => {
     if (inbox.userId === route.params.id) {
       user_chats.value = inbox;
     }
   });
-  console.log(user_chats.value);
 });
 </script>
 <template>

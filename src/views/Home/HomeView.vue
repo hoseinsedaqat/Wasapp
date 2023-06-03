@@ -1,5 +1,6 @@
 <script setup>
-import { inbox_message } from "@/data/inboxMessage";
+import { chats } from "@/stores/chats";
+const useChats = chats();
 </script>
 
 <template>
@@ -58,8 +59,8 @@ import { inbox_message } from "@/data/inboxMessage";
       </aside>
       <!-- Sidebar Messages -->
       <aside class="bg-base-300">
-        <router-link v-for="inbox in inbox_message" :key="inbox" :to="`/chat/${inbox.userId}`">
-          <article>
+        <article v-for="(inbox, idx) in useChats.inbox_message" :key="(inbox, idx)">
+          <router-link :to="`/chat/${inbox.userId}`">
             <div>
               <img
                 :src="inbox.userImg"
@@ -79,8 +80,8 @@ import { inbox_message } from "@/data/inboxMessage";
                 ></icon-components>
               </p>
             </div>
-          </article>
-        </router-link>
+          </router-link>
+        </article>
       </aside>
     </section>
     <section id="app-container" class="bg-base-100">

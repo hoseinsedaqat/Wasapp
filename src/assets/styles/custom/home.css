@@ -62,18 +62,19 @@
     border-radius: 0 0 5px 5px;
 }
 
-#home-container aside:nth-child(3) article {
+#home-container aside:nth-child(3) article a {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     border-top: 1px solid #3c4247;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
-/* #home-container aside:nth-child(3) article:last-child {
+#home-container aside:nth-child(3) article:last-child {
     border-bottom: none !important;
     border-top: none !important;
-} */
+    padding-bottom: 7rem;
+}
 
 #home-container aside:nth-child(3) article div:nth-child(1) {
     display: flex;
