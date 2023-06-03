@@ -70,10 +70,10 @@
     padding: 0.5rem;
 }
 
-#home-container aside:nth-child(3) article:last-child {
+/* #home-container aside:nth-child(3) article:last-child {
     border-bottom: none !important;
     border-top: none !important;
-}
+} */
 
 #home-container aside:nth-child(3) article div:nth-child(1) {
     display: flex;

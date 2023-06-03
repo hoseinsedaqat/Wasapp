@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup>
+import { inbox_message } from "@/data/inboxMessage";
+</script>
 
 <template>
   <div id="layout">
@@ -7,7 +9,7 @@
       <aside class="bg-base-300">
         <main>
           <img
-            src="@/assets/images/Hosein_Sedaqat.jpg"
+            src="@/assets/images/Users/Hosein_Sedaqat.jpg"
             alt="User-Profile"
             class="w-12 h-12 rounded-full"
           />
@@ -56,23 +58,25 @@
       </aside>
       <!-- Sidebar Messages -->
       <aside class="bg-base-300">
-        <router-link to="/chat/1">
-          <article v-for="x in 15" :key="x">
+        <router-link v-for="inbox in inbox_message" :key="inbox" :to="`/chat/${inbox.userId}`">
+          <article>
             <div>
               <img
-                src="@/assets/images/Hosein_Sedaqat.jpg"
+                :src="inbox.userImg"
                 alt="User-Profile"
                 class="w-12 h-12 rounded-full"
               />
               <div>
-                <h3 class="text-lg">This Hosein 🤞🍕🍍</h3>
+                <h3 class="text-lg">{{ inbox.userName }}</h3>
                 <p class="text-xs">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
             <div>
               <p class="text-xs">9:21</p>
               <p>
-                <icon-components :class="'bi bi-chevron-down cursor-pointer'"></icon-components>
+                <icon-components
+                  :class="'bi bi-chevron-down cursor-pointer'"
+                ></icon-components>
               </p>
             </div>
           </article>

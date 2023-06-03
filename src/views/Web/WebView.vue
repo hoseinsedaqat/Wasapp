@@ -4,7 +4,7 @@
   <section id="web" class="p-1">
     <main class="my-5">
       <img
-        src="@/assets/images/WhatsApp_Connected.jpg"
+        src="@/assets/images/Background/WhatsApp_Connected.jpg"
         alt="Connected_Whatsapp"
         class="w-40 h-40 rounded-full"
       />
