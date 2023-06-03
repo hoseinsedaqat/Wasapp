@@ -1,0 +1,111 @@
+/* Chat */
+
+#chat aside:nth-child(1) {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+#chat aside:nth-child(1) main:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+#chat aside:nth-child(1) main:nth-child(1) div {
+    margin: 0 1rem;
+}
+
+#chat aside:nth-child(1) main:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#chat aside:nth-child(1) main:nth-child(2) div i {
+    margin: 0 1rem;
+}
+
+#chat aside:nth-child(2) {
+    background: url('@/assets/images/bg-chat-dark.png');
+    background-size: contain;
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 1rem 1rem 10rem 1rem;
+    position: relative;
+}
+
+#chat aside:nth-child(3) {
+    width: 70%;
+    /* margin: 1rem 0 0 0; */
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    /* z-index: 10; */
+}
+
+#chat aside:nth-child(3) main {
+    margin: 0 0.5rem;
+}
+
+#chat aside:nth-child(3) main:nth-child(3) {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #323739;
+    padding: 0 0.5rem;
+}
+
+#chat aside:nth-child(3) main div:nth-child(3) {
+    width: 100%;
+}
+
+#chat aside:nth-child(3) main input {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #323739;
+    padding: 0.3rem 0.7rem;
+    font-size: 14px;
+}
+
+#chat aside:nth-child(3) main input:focus {
+    outline: none;
+}
+
+#chat aside:nth-child(3) main:nth-child(4) {
+    transform: rotate(44deg)
+}
+
+
+/* modal search */
+
+#modal_input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #323739;
+    border-radius: 30px;
+    margin: 1rem 0;
+}
+
+#modal_input input {
+    width: 100%;
+    background-color: #323739;
+    padding: 0.3rem 0.7rem;
+    font-size: 14px;
+}
+
+#modal_input input:focus {
+    outline: none;
+}
+
+.modal-skelton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

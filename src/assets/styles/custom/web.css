@@ -1,0 +1,16 @@
+/* web start content*/
+
+#web {
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#web main:nth-child(2) p {
+    margin: 0.5rem 0;
+}

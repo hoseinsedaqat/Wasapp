@@ -71,6 +71,9 @@
             </div>
             <div>
               <p class="text-xs">9:21</p>
+              <p>
+                <icon-components :class="'bi bi-chevron-down cursor-pointer'"></icon-components>
+              </p>
             </div>
           </article>
         </router-link>

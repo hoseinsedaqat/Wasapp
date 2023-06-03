@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section id="whatsapp" class="p-1">
+  <section id="web" class="p-1">
     <main class="my-5">
       <img
         src="@/assets/images/WhatsApp_Connected.jpg"
