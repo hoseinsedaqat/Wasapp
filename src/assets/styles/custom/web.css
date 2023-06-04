@@ -2,13 +2,15 @@
 
 #web {
     max-width: 600px;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    overflow-y: auto;
+    padding: 0.5rem;
 }
 
 #web main:nth-child(2) p {

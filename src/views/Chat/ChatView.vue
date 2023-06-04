@@ -1,15 +1,14 @@
 <script setup>
-import { chats } from "@/stores/chats";
 import { watch, onMounted, ref } from "vue";
+import { chats } from "@/stores/chats";
 import { useRoute } from "vue-router";
-const route = useRoute();
 const user_chats = ref({});
+const route = useRoute();
 const useChats = chats();
 
 watch(
   () => route.params.id,
   () => {
-    // console.log(`MyCoolComponent - watch route.name changed to ${route.params.id}`);
     useChats.inbox_message.forEach((inbox) => {
       if (inbox.userId === route.params.id) {
         user_chats.value = inbox;
@@ -89,18 +88,28 @@ onMounted(() => {
       </main>
     </aside>
     <aside>
-      <div class="chat chat-start" v-for="x in 5" :key="x">
+      <!-- start,end -->
+      <div
+        class="chat"
+        v-for="chats in user_chats.chats"
+        :key="chats"
+        :class="chats.start ? 'chat-start' : 'chat-end'"
+      >
         <div class="chat-image avatar">
           <div class="w-10 rounded-full">
-            <img :src="user_chats.userImg" />
+            <img :src="user_chats.userImg" v-if="chats.start" />
+            <img src="@/assets/images/Users/Hosein_Sedaqat.jpg" v-else />
           </div>
         </div>
-        <div class="chat-bubble">You were the Chosen One!</div>
+        <div class="chat-bubble">{{ chats.start ? chats.start : chats.end }}</div>
         <div class="chat-footer">
-          <time class="text-xs text-white">12:45</time>
+          <time class="text-xs text-white">{{
+            chats.start ? chats.start_time : chats.end_time
+          }}</time>
         </div>
       </div>
-      <div class="chat chat-end" v-for="x in 5" :key="x">
+      <!-- end -->
+      <!-- <div class="chat chat-end" v-for="x in 5" :key="x">
         <div class="chat-image avatar">
           <div class="w-10 rounded-full">
             <img src="@/assets/images/Users/Hosein_Sedaqat.jpg" />
@@ -110,7 +119,7 @@ onMounted(() => {
         <div class="chat-footer">
           <time class="text-xs text-white">12:46</time>
         </div>
-      </div>
+      </div> -->
     </aside>
     <aside class="bg-base-200">
       <main>
@@ -125,11 +134,17 @@ onMounted(() => {
       </main>
       <main>
         <div>
-          <input type="text" placeholder="Type a message" />
+          <input
+            type="text"
+            placeholder="Type a message"
+            v-model="useChats.add_message"
+            @keyup.enter="useChats.send_message(user_chats.userId)"
+          />
         </div>
       </main>
       <main>
         <icon-components
+          @click="useChats.send_message(user_chats.userId)"
           :class="'bi bi-send-fill cursor-pointer text-2xl'"
         ></icon-components>
       </main>

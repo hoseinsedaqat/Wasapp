@@ -20,60 +20,178 @@ import Dan from '@/assets/images/Users/Dan_Abramov.jpg';
 
 import Evan from '@/assets/images/Users/Evan_You.jpg';
 
-export const inbox_message:{userId:string,userName:string,userImg:string}[] = [
+export const inbox_message:{userId:string,userName:string,userImg:string,chats:any}[] = [
     {
         userId: 'ce64d829-3268-4af2-9f7d-b13b1ae37f15',
         userName: 'Hosein Sedaqat',
-        userImg: Hosein
+        userImg: Hosein,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: 'bf214515-2b51-4c7e-b253-b625fcfaa922',
         userName: 'Elmira Jamalian',
-        userImg: Elmira
+        userImg: Elmira,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: '01d021ef-ea0a-4e68-bd60-1856028a3f9c',
         userName: 'Mohammadreza Salari',
-        userImg: Mohammreza
+        userImg: Mohammreza,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: '507208ea-9925-4492-9ca3-da0f9956cda4',
         userName: 'Jimmy Heller',
-        userImg: Jimmy
+        userImg: Jimmy,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: 'dfafbce0-61a2-4488-905b-cdf9342247e3',
         userName: 'Nima Arefi',
-        userImg: Nima
+        userImg: Nima,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: '523dc8c8-de72-41e5-9467-c570698360d4',
         userName: 'Mohsen Radoo',
-        userImg: Mohsen
+        userImg: Mohsen,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: 'f643b08e-ca4d-41cd-90d4-82595c77bbb8',
         userName: 'Pouya Sadeghi',
-        userImg: Pouya
+        userImg: Pouya,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Hey Pouya what a day for you man finally your new version of daisyui is release 😎',
+                end_time: '14:25'
+            },
+            {
+                start: `yes man and it's rock`,
+                start_time: '13:20'
+            },
+            {
+                end: 'is awesome 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: 'ca87b859-c789-4997-b703-21d0335c95a4',
         userName: 'Ali Alaei',
-        userImg: Ali
+        userImg: Ali,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: 'e4eafb80-c57c-4144-93f1-7e8ce70d6baa',
         userName: 'Negar Jafari',
-        userImg: Negar
+        userImg: Negar,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: '01d303e9-0709-47c7-9f45-85fad5e971aa',
         userName: 'Dan Abramov',
-        userImg: Dan
+        userImg: Dan,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
     {
         userId: '9e614684-8b67-4e54-ad11-a08fcf747a34',
         userName: 'Evan You',
-        userImg: Evan
+        userImg: Evan,
+        chats:[
+            {
+                start: 'Hello Hosein ?',
+                start_time: '13:20'
+            },
+            {
+                end: 'Wow Hosein Nice Man 😎',
+                end_time: '14:25'
+            }
+        ]
     },
 ]

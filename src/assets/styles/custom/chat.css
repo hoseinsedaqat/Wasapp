@@ -34,6 +34,7 @@
     height: 100vh;
     padding: 1rem 1rem 10rem 1rem;
     position: relative;
+    word-break: break-all;
 }
 
 #chat aside:nth-child(3) {
