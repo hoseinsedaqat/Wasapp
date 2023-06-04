@@ -41,14 +41,14 @@ onMounted(() => {
       </main>
       <main>
         <div>
-          <a href="#my_modal_8">
+          <a href="#search_message">
             <icon-components
               :class="'bi bi-search text-xl cursor-pointer'"
             ></icon-components>
           </a>
         </div>
         <!-- Modal Component -->
-        <div class="modal" id="my_modal_8">
+        <div class="modal" id="search_message">
           <div class="modal-box">
             <div class="modal-action">
               <a href="#" class="modal-skelton">

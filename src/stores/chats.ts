@@ -1,6 +1,8 @@
 import { inbox_message } from '@/data/inboxMessage';
+import { useToast } from 'vue-toastification';
 import { defineStore } from 'pinia';
 import moment from 'moment';
+const toast = useToast();
 
 export const chats = defineStore('chats', {
     state:() => ({
@@ -12,14 +14,18 @@ export const chats = defineStore('chats', {
     },
     actions:{
         send_message(id:string){
-            this.inbox_message.forEach(userData => {
-                if(id === userData.userId){
-                    userData.chats.push({
-                        end: this.add_message,
-                        end_time: moment().format("h:mm")
-                    })
-                }
+            if(this.add_message === "" || this.add_message.trim() === ""){
+                toast.error('Please Enter Something 💀')
+            }else{
+                this.inbox_message.forEach(userData => {
+                    if(id === userData.userId){
+                        userData.chats.push({
+                            end: this.add_message,
+                            end_time: moment().format("h:mm")
+                        })
+                    }
             })
+            }
             this.add_message = ""
         },
     }
