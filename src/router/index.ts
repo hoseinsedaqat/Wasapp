@@ -20,6 +20,11 @@ const router = createRouter({
       name: 'ChatView',
       component: async () => await import('@/views/Chat/ChatView.vue')
     },
+    {
+      path: '/setting/:id',
+      name: 'SettingView',
+      component: async () => await import('@/views/Setting/SettingView.vue')
+    },
   ]
 })
 

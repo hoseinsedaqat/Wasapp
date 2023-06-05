@@ -28,6 +28,7 @@ onMounted(() => {
 <template>
   <section id="chat">
     <aside class="bg-base-200">
+      <router-link :to="`/setting/${user_chats.userId}`">
       <main>
         <img
           :src="user_chats.userImg"
@@ -39,6 +40,7 @@ onMounted(() => {
           <p class="text-xs">online</p>
         </div>
       </main>
+      </router-link>
       <main>
         <div>
           <a href="#search_message">
