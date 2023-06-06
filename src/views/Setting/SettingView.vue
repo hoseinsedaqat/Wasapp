@@ -90,5 +90,95 @@ onMounted(() => {
         </div>
       </article>
     </main>
+    <main class="my-2 bg-base-200">
+      <p class="text-cyan-400">About and phone number</p>
+      <div class="my-2">
+        <p class="text-white text-lg">the most personal is most creative 🍍🍕🛠</p>
+      </div>
+      <div>
+        <p class="text-white text-lg">+989176484569</p>
+      </div>
+    </main>
+    <main class="my-2 bg-base-200">
+      <div class="group-header">
+        <p class="text-cyan-400">Groups in common</p>
+        <p class="text-cyan-400">3</p>
+      </div>
+      <article class="my-3">
+        <div>
+          <img
+            src="@/assets/images/Groups/Node.png"
+            alt="Node_Group"
+            class="w-12 h-12 border-red-50 rounded-full"
+          />
+        </div>
+        <div class="mx-4">
+          <p class="text-white">Node.js Group</p>
+          <p class="text-xs">
+            Hosein Sedaqat, Elmira Jamlian, Mohammadreza Salari, Nima...
+          </p>
+        </div>
+      </article>
+      <article class="my-3">
+        <div>
+          <img
+            src="@/assets/images/Groups/React.png"
+            alt="React_Group"
+            class="w-12 h-12 border-red-50 rounded-full back"
+          />
+        </div>
+        <div class="mx-4">
+          <p class="text-white">React.js Group</p>
+          <p class="text-xs">
+            Hosein Sedaqat, Elmira Jamlian, Mohammadreza Salari, Nima...
+          </p>
+        </div>
+      </article>
+      <article class="my-3">
+        <div>
+          <img
+            src="@/assets/images/Groups/Vue.png"
+            alt="Vue_Group"
+            class="w-12 h-12 border-red-50 rounded-full"
+          />
+        </div>
+        <div class="mx-4">
+          <p class="text-white">Vue.js Group</p>
+          <p class="text-xs">
+            Hosein Sedaqat, Elmira Jamlian, Mohammadreza Salari, Nima...
+          </p>
+        </div>
+      </article>
+    </main>
+    <main class="my-2 bg-base-200">
+      <div>
+        <icon-components
+        :class="'bi bi-slash-circle text-lg cursor-pointer text-red-500'"
+      ></icon-components>
+      </div>
+      <div class="text-red-500">
+        Block
+      </div>
+    </main>
+    <main class="my-2 bg-base-200">
+      <div>
+        <icon-components
+        :class="'bi bi-hand-thumbs-down text-lg cursor-pointer text-red-500'"
+      ></icon-components>
+      </div>
+      <div class="text-red-500">
+        Report contact
+      </div>
+    </main>
+    <main class="my-2 bg-base-200">
+      <div>
+        <icon-components
+        :class="'bi bi-trash-fill text-lg cursor-pointer text-red-500'"
+      ></icon-components>
+      </div>
+      <div class="text-red-500">
+        Delete chat
+      </div>
+    </main>
   </section>
 </template>

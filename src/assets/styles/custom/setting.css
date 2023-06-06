@@ -56,3 +56,70 @@
 #setting main:nth-child(4) .setting-option:last-child{
     border-bottom: none;
 }
+
+#setting main:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#setting main:nth-child(5) div{
+    border-bottom: 1px solid #3c4247;
+    padding: 0.7rem 0;
+}
+
+#setting main:nth-child(5) div:last-child {
+    border-bottom: none;
+}
+
+#setting main:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#setting main:nth-child(6) .group-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#setting main:nth-child(6) article{
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#setting main:nth-child(6) article:hover {
+    background-color: #3c4247;
+    border-radius: 15px;
+}
+
+#setting main:nth-child(7){
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#setting main:nth-child(7) div {
+    margin:  0 0.5rem;
+}
+#setting main:nth-child(8){
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#setting main:nth-child(8) div {
+    margin:  0 0.5rem;
+}
+#setting main:nth-child(9){
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#setting main:nth-child(9) div {
+    margin:  0 0.5rem;
+}
