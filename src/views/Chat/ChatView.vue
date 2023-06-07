@@ -37,7 +37,7 @@ onMounted(() => {
         />
         <div>
           <p>{{ user_chats.userName }}</p>
-          <p class="text-xs">online</p>
+          <p class="text-xs badge badge-success text-white">online</p>
         </div>
       </main>
       </router-link>

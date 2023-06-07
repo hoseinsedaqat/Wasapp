@@ -21,10 +21,12 @@ export const chats = defineStore('chats', {
                     if(id === userData.userId){
                         userData.chats.push({
                             end: this.add_message,
-                            end_time: moment().format("h:mm")
+                            end_time: moment().format("h:mm a")
                         })
                     }
             })
+            // add to utils
+            document.querySelector('#chat aside:nth-child(2)')?.scrollTo(0,9999)
             }
             this.add_message = ""
         },

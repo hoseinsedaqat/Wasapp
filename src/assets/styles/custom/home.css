@@ -64,7 +64,7 @@
 
 #home-container aside:nth-child(3) article a {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     border-top: 1px solid #3c4247;
     padding: 1rem;
@@ -78,6 +78,7 @@
 
 #home-container aside:nth-child(3) article div:nth-child(1) {
     display: flex;
+    align-items: center;
 }
 
 #home-container aside:nth-child(3) article div:nth-child(1) div {

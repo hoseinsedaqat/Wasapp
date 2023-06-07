@@ -12,6 +12,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10",
     "bootstrap-icons": "^1.10.5",
     "daisyui": "^2.52.0",

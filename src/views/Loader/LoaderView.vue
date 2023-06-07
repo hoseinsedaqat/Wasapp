@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
   <section id="loader">
-    <main>
+    <main class="animate__animated animate__heartBeat">
       <icon-components :class="'bi bi-whatsapp text-4xl'"></icon-components>
     </main>
     <main>

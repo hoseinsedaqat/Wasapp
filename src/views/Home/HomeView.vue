@@ -69,12 +69,18 @@ const useChats = chats();
               />
               <div>
                 <h3 class="text-lg">{{ inbox.userName }}</h3>
-                <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+                <p class="text-xs">
+                  {{
+                    inbox.lastMessage.length > 45
+                      ? inbox.lastMessage.substring(0, 40) + "..."
+                      : inbox.lastMessage
+                  }}
+                </p>
               </div>
             </div>
             <div>
-              <p class="text-xs">9:21</p>
-              <p>
+              <p class="text-xs">{{ inbox.lastTime }}</p>
+              <p class="my-1">
                 <icon-components
                   :class="'bi bi-chevron-down cursor-pointer'"
                 ></icon-components>

@@ -93,10 +93,10 @@ onMounted(() => {
     <main class="my-2 bg-base-200">
       <p class="text-cyan-400">About and phone number</p>
       <div class="my-2">
-        <p class="text-white text-lg">the most personal is most creative 🍍🍕🛠</p>
+        <p class="text-white text-lg">{{ user_chats.lastMessage }}</p>
       </div>
       <div>
-        <p class="text-white text-lg">+989176484569</p>
+        <p class="text-white text-lg">+{{ user_chats.userNumber }}</p>
       </div>
     </main>
     <main class="my-2 bg-base-200">
