@@ -1,7 +1,8 @@
-<script setup lang="ts">
+<script setup>
 // import
-import { onMounted, ref } from "vue";
+import { width_check } from "@/utils/widthCheck";
 import { useRouter } from "vue-router";
+import { onMounted, ref } from "vue";
 // data
 const router = useRouter();
 const progress_bar_size = ref(0);
@@ -12,7 +13,11 @@ onMounted(() => {
   }, 50);
 
   setTimeout(() => {
-    router.push("/web/whatsapp");
+    if (!width_check()) {
+      router.push("/web/whatsapp");
+    } else {
+      router.push("/mobile/whatsapp");
+    }
   }, 5000);
 });
 </script>
