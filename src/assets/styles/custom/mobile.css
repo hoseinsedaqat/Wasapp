@@ -1,0 +1,74 @@
+#mobile {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#mobile header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0.5rem; */
+    padding: 1rem;
+}
+
+#mobile header main:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#mobile header main:nth-child(2) div i {
+    margin: 0 0.7rem;
+}
+
+#mobile_section div {
+    /* margin: 1rem 0 0 0; */
+    padding: 1rem 0 0 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#mobile_section div p {
+    padding: 0 2rem;
+}
+
+#mobile_section div p:nth-child(1) {
+    color: forestgreen;
+    border-bottom: 1px solid forestgreen;
+}
+
+#mobile_chats:hover {
+    cursor: pointer;
+    background-color: #3c4247;
+}
+
+#mobile_chats i {
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+#mobile_chats:hover i {
+    opacity: 1;
+}
+
+#mobile_chats a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #3c4247;
+    padding: 1rem 0.5rem;
+}
+
+#mobile_chats a div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+#mobile_chats a div:nth-child(1) img {
+    margin: 0 0.5rem 0 0;
+}
+
+
+#mobile_chat_aside {
+    width: 100% !important;
+}

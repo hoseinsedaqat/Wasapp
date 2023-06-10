@@ -31,6 +31,12 @@ const router = createRouter({
       // beforeEnter: redirectRoute,
       component: async () => await import('@/views/Mobile/MobileView.vue')
     },
+    {
+      path: '/mobile/chat/:id',
+      name: 'MobileChatView',
+      // beforeEnter: redirectRoute,
+      component: async () => await import('@/views/Mobile/Chat/MobileChat.vue')
+    },
   ]
 })
 
