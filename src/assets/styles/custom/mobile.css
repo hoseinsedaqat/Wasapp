@@ -36,6 +36,9 @@
     color: forestgreen;
     border-bottom: 1px solid forestgreen;
 }
+#mobile_chats:last-child {
+    padding: 0 0 3rem 0;
+}
 
 #mobile_chats:hover {
     cursor: pointer;

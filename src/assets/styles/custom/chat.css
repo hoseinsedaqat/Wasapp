@@ -110,3 +110,9 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media screen and (max-width:800px){
+    #chat aside:nth-child(2){
+        padding: 1rem 1rem 15rem 1rem;
+    }
+}
