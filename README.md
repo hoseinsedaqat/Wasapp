@@ -1,4 +1,8 @@
-# wasap
+# Wasapp
+
+<div align="center">
+  <img width=100% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/244871476-8c776f8c-65d0-4faf-ad01-05ef51c0d3b1.png" />
+</div>
 
 This template should help get you started developing with Vue 3 in Vite.
 
