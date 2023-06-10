@@ -1,4 +1,4 @@
-import Hosein from '@/assets/images/Users/Hosein_Sedaqat.jpg';
+import Zoheir from '@/assets/images/Users/Zoheir_Khonyagar.jpg';
 
 import Elmira from '@/assets/images/Users/Elmira_Jamalian.jpg';
 
@@ -20,24 +20,57 @@ import Dan from '@/assets/images/Users/Dan_Abramov.jpg';
 
 import Evan from '@/assets/images/Users/Evan_You.jpg';
 
-export const inbox_message:{userId:string,userName:string,userImg:string,chats:any,lastTime:string,lastMessage:string,userNumber:string}[] = [
+export const inbox_message:{userId:string,userName:string,userImg:string,chats:any,lastTime:string,lastMessage:string,userNumber:string,seen:string}[] = [
     {
         userId: 'ce64d829-3268-4af2-9f7d-b13b1ae37f15',
-        userName: 'Hosein Sedaqat',
-        userImg: Hosein,
+        userName: 'Zoheir Khonyagar',
+        userImg: Zoheir,
         chats:[
             {
                 start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start_time: '10:20 am'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
-            }
+                end: 'Hello Man you are good ?😎',
+                end_time: '10:45 am'
+            },
+            {
+                start: 'yes everything is awesome dude',
+                start_time: '11:11 am'
+            },
+            {
+                end: 'okay hey when do you go to work tomorrow ?',
+                end_time: '11:45 am'
+            },
+            {
+                start: 'i go to work at 9 in the morning',
+                start_time: '12:36 pm'
+            },
+            {
+                end: 'okay i will go to work early tomorrow',
+                end_time: '13:57 pm'
+            },
+            {
+                start: 'hey yoo do you go to running tomorrow ?',
+                start_time: '18:26 pm'
+            },
+            {
+                end: 'yes i will go and i will call you in 6 oclock in the morning',
+                end_time: '18:57 pm'
+            },
+            {
+                start: 'asalan lamasab asal 🤣😂',
+                start_time: '11:56 pm'
+            },
+            {
+                end: '😂😂😂 asali asal',
+                end_time: '11:57 pm'
+            },
         ],
         lastTime: '23:56',
         lastMessage: `The quick brown fox jumps over the lazy dog.`,
-        userNumber: '9176484569'
+        userNumber: '4176484569',
+        seen: 'online'
     },
     {
         userId: 'bf214515-2b51-4c7e-b253-b625fcfaa922',
@@ -45,17 +78,26 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Elmira,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'i dont know really man 🤣',
+                start_time: '13:20 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'okay is not problem 😎',
+                end_time: '13:30 pm'
+            },
+            {
+                start: 'what do you think about big bang theory series 💀',
+                start_time: '22:43 pm'
+            },
+            {
+                end: 'is soooooo great 😍',
+                end_time: '23:30 pm'
             }
         ],
         lastTime: '22:43',
         lastMessage: `Life is a journey, not a destination.`,
-        userNumber: '6022653793'
+        userNumber: '6022653793',
+        seen: 'offline'
     },
     {
         userId: '01d021ef-ea0a-4e68-bd60-1856028a3f9c',
@@ -63,17 +105,26 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Mohammreza,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'hey man do you want to go to recafe ? ',
+                start_time: '20:05 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
-            }
+                end: 'yeaaaaaah sureeeeeee why not man 😉',
+                end_time: '20:25 pm'
+            },
+            {
+                start: 'okay i will call you when i want to go',
+                start_time: '21:05 pm'
+            },
+            {
+                end: 'thanks a lot 😁✌',
+                end_time: '22:25 pm'
+            },
         ],
         lastTime: '21:05',
         lastMessage: `In three words I can sum up everything I've learned about life: it goes`,
-        userNumber: '2297241141'
+        userNumber: '2297241141',
+        seen: 'online'
     },
     {
         userId: '507208ea-9925-4492-9ca3-da0f9956cda4',
@@ -81,17 +132,18 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Jimmy,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'hey do i know you ??? ',
+                start_time: '20:20 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'no i dont think so jimmy but is honor to talk with you',
+                end_time: '20:25 pm'
             }
         ],
         lastTime: '20:20',
         lastMessage: `The only way to do great work is to love what you do`,
-        userNumber: '9496315667'
+        userNumber: '9496315667',
+        seen: 'offline'
     },
     {
         userId: 'dfafbce0-61a2-4488-905b-cdf9342247e3',
@@ -99,17 +151,18 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Nima,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'yo yo yo whats up',
+                start_time: '19:35 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'hey yo yo, you are a true legendary for me ✌😎',
+                end_time: '22:34 pm'
             }
         ],
         lastTime: '19:35',
         lastMessage: `Life is like a camera, focus on the good times.`,
-        userNumber: '6196452868'
+        userNumber: '6196452868',
+        seen: 'offline'
     },
     {
         userId: '523dc8c8-de72-41e5-9467-c570698360d4',
@@ -117,17 +170,18 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Mohsen,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: '🤣🤣🤣',
+                start_time: '18:30 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'you are high 🤣🤣🤣🤣🤣',
+                end_time: '18:31 pm'
             }
         ],
         lastTime: '18:30',
         lastMessage: `Time flies when you're having fun.`,
-        userNumber: '8504915324'
+        userNumber: '8504915324',
+        seen: 'offline'
     },
     {
         userId: 'f643b08e-ca4d-41cd-90d4-82595c77bbb8',
@@ -135,25 +189,26 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Pouya,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'check the website 😁',
+                start_time: '12:52 pm'
             },
             {
                 end: 'Hey Pouya what a day for you man finally your new version of daisyui is release 😎',
-                end_time: '14:25'
+                end_time: '13:25 pm'
             },
             {
                 start: `yes man and it's rock`,
-                start_time: '13:20'
+                start_time: '14:22 pm'
             },
             {
                 end: 'is awesome 😎',
-                end_time: '14:25'
+                end_time: '14:25 pm'
             }
         ],
         lastTime: '14:22',
         lastMessage: `Believe you can and you're halfway there.`,
-        userNumber: '6269603540'
+        userNumber: '6269603540',
+        seen: 'online'
     },
     {
         userId: 'ca87b859-c789-4997-b703-21d0335c95a4',
@@ -161,17 +216,18 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Ali,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'thanks hosein',
+                start_time: '13:32 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'you are great teacher in iranian commiunity ali thanks a lot for your effort for us ❤',
+                end_time: '19:15 pm'
             }
         ],
         lastTime: '13:32',
         lastMessage: `Actions speak louder than words.`,
-        userNumber: '3862595150'
+        userNumber: '3862595150',
+        seen: 'offline'
     },
     {
         userId: 'e4eafb80-c57c-4144-93f1-7e8ce70d6baa',
@@ -179,17 +235,18 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Negar,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'Hooooooooseiiiiiiiiinnnnnn 😁',
+                start_time: '13:01 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'Negaaaaaaaaaaaaaarrrrrrrrrr 😂',
+                end_time: '13:20 pm'
             }
         ],
         lastTime: '13:01',
         lastMessage: `Success is not final, failure is not fatal: it is the courage to continue that counts.`,
-        userNumber: '9073391716'
+        userNumber: '9073391716',
+        seen: 'offline'
     },
     {
         userId: '01d303e9-0709-47c7-9f45-85fad5e971aa',
@@ -197,17 +254,18 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Dan,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'React is Awesome',
+                start_time: '12:05 pm'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'You are awesome dan awesome ✌🎉',
+                end_time: '14:25 pm'
             }
         ],
         lastTime: '12:05',
         lastMessage: `Life is 10% what happens to us and 90% how we react to it.`,
-        userNumber: '4234183602'
+        userNumber: '4234183602',
+        seen: 'offline'
     },
     {
         userId: '9e614684-8b67-4e54-ad11-a08fcf747a34',
@@ -215,16 +273,17 @@ export const inbox_message:{userId:string,userName:string,userImg:string,chats:a
         userImg: Evan,
         chats:[
             {
-                start: 'Hello Hosein ?',
-                start_time: '13:20'
+                start: 'Vue is Awesome',
+                start_time: '06:30 am'
             },
             {
-                end: 'Wow Hosein Nice Man 😎',
-                end_time: '14:25'
+                end: 'You are awesome evan awesome ✌🎉',
+                end_time: '09:47 am'
             }
         ],
         lastTime: '06:30',
         lastMessage: `The best way to predict the future is to create it.`,
-        userNumber: '4804719551'
+        userNumber: '4804719551',
+        seen: 'online'
     },
 ]

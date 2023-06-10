@@ -37,7 +37,7 @@ onMounted(() => {
         />
         <div>
           <p>{{ user_chats.userName }}</p>
-          <p class="text-xs badge badge-success text-white">online</p>
+          <p class="text-xs badge text-white" :class="user_chats.seen === 'online' ? 'badge-success' : 'badge-error'">{{ user_chats.seen }}</p>
         </div>
       </main>
       </router-link>
