@@ -8,7 +8,7 @@ function nice(text){
 <template>
   <section id="mobile">
     <!-- Header -->
-    <header class="bg-base-300">
+    <header>
       <main>
         <h3 class="text-lg">WhatsApp</h3>
       </main>
@@ -64,7 +64,7 @@ function nice(text){
       </main>
     </header>
     <!-- Chats Call Status -->
-    <section id="mobile_section" class="bg-base-200">
+    <section id="mobile_section">
       <div>
         <p @click="nice('chats')">Chats</p>
         <p @click="nice('status')">Status</p>
@@ -75,6 +75,7 @@ function nice(text){
       id="mobile_chats"
       v-for="(inbox, idx) in useChats.inbox_message"
       :key="(inbox, idx)"
+      class="bg-base-300"
     >
       <router-link :to="`/mobile/chat/${inbox.userId}`">
         <div>
