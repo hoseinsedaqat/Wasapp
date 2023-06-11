@@ -3,13 +3,13 @@
     overflow-y: auto;
 }
 
-#setting main:nth-child(1){
+#setting main:nth-child(1) {
     display: flex;
     align-items: center;
     padding: 0.5rem;
 }
 
-#setting main:nth-child(2){
+#setting main:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,26 +20,26 @@
     margin: 1rem 0;
 }
 
-#setting main:nth-child(3){
+#setting main:nth-child(3) {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
 
-#setting main:nth-child(3) article:nth-child(1){
+#setting main:nth-child(3) article:nth-child(1) {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#setting main:nth-child(3) article:nth-child(2) div img{
+#setting main:nth-child(3) article:nth-child(2) div img {
     width: 100%;
     height: 200px;
 }
 
-#setting main:nth-child(4){
+#setting main:nth-child(4) {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
@@ -53,17 +53,17 @@
     padding: 0.7rem;
 }
 
-#setting main:nth-child(4) .setting-option:last-child{
+#setting main:nth-child(4) .setting-option:last-child {
     border-bottom: none;
 }
 
-#setting main:nth-child(5){
+#setting main:nth-child(5) {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-#setting main:nth-child(5) div{
+#setting main:nth-child(5) div {
     border-bottom: 1px solid #3c4247;
     padding: 0.7rem 0;
 }
@@ -72,19 +72,19 @@
     border-bottom: none;
 }
 
-#setting main:nth-child(6){
+#setting main:nth-child(6) {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-#setting main:nth-child(6) .group-header{
+#setting main:nth-child(6) .group-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#setting main:nth-child(6) article{
+#setting main:nth-child(6) article {
     padding: 0.5rem;
     cursor: pointer;
     display: flex;
@@ -96,30 +96,47 @@
     border-radius: 15px;
 }
 
-#setting main:nth-child(7){
+#setting main:nth-child(7) {
     display: flex;
     align-items: center;
     padding: 1rem;
 }
 
 #setting main:nth-child(7) div {
-    margin:  0 0.5rem;
+    margin: 0 0.5rem;
 }
-#setting main:nth-child(8){
+
+#setting main:nth-child(8) {
     display: flex;
     align-items: center;
     padding: 1rem;
 }
 
 #setting main:nth-child(8) div {
-    margin:  0 0.5rem;
+    margin: 0 0.5rem;
 }
-#setting main:nth-child(9){
+
+#setting main:nth-child(9) {
     display: flex;
     align-items: center;
     padding: 1rem;
 }
 
 #setting main:nth-child(9) div {
-    margin:  0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+@media screen and (max-width:800px){
+    #setting main:nth-child(9){
+        margin: 0 0 5rem 0;
+    }
+
+    #setting main:nth-child(3) article:nth-child(2) div img {
+        height: 120px;
+    }
+
+    #setting main:nth-child(6) article img {
+        width: 50px !important;
+        height: 40px !important;
+    }
 }

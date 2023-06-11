@@ -19,6 +19,11 @@ onMounted(() => {
     <aside class="bg-base-200">
       <router-link :to="`/setting/${user_chats.userId}`">
         <main>
+          <router-link to="/mobile/whatsapp">
+            <icon-components
+              :class="'bi bi-arrow-left text-xl cursor-pointer mr-4'"
+            ></icon-components>
+          </router-link>
           <img
             :src="user_chats.userImg"
             alt="User-Profile"

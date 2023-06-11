@@ -1,6 +1,7 @@
 #mobile {
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #mobile header {
@@ -22,20 +23,21 @@
 
 #mobile_section div {
     /* margin: 1rem 0 0 0; */
-    padding: 1rem 0 0 0; 
+    padding: 1rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 #mobile_section div p {
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 #mobile_section div p:nth-child(1) {
     color: forestgreen;
     border-bottom: 1px solid forestgreen;
 }
+
 #mobile_chats:last-child {
     padding: 0 0 3rem 0;
 }

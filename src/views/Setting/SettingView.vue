@@ -1,5 +1,6 @@
 <script setup>
 import { useRoute, useRouter } from "vue-router";
+import { width_check } from "@/utils/widthCheck";
 import { chats } from "@/stores/chats";
 import { onMounted, ref } from "vue";
 const router = useRouter();
@@ -8,7 +9,11 @@ const route = useRoute();
 const useChats = chats();
 
 function back_to_chat() {
-  router.push(`/chat/${route.params.id}`);
+  if(!width_check()){
+    router.push(`/chat/${route.params.id}`);
+  }else{
+    router.push(`/mobile/chat/${route.params.id}`);
+  }
 }
 
 onMounted(() => {
