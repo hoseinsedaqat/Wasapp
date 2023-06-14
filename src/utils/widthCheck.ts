@@ -1,5 +1,5 @@
 export function width_check(){
-    if(window.innerWidth < 800){
+    if(window.innerWidth < 850){
         return true;
     }else {
         return false;

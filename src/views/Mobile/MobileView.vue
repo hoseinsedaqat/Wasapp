@@ -26,9 +26,9 @@ onMounted(() => {
 });
 </script>
 <template>
-  <section id="mobile">
+  <section id="mobile" class="bg-base-300">
     <!-- Header -->
-    <header>
+    <header class="bg-base-100">
       <main>
         <h3 class="text-lg">WhatsApp</h3>
       </main>
@@ -84,7 +84,7 @@ onMounted(() => {
       </main>
     </header>
     <!-- Chats Call Status -->
-    <section id="mobile_section">
+    <section id="mobile_section" class="bg-base-100">
       <div>
         <p @click="show_chats" :class="mobile_chats ? 'for_show_which_part' : ''">Chats</p>
         <p @click="show_status" :class="mobile_status ? 'for_show_which_part' : ''">Status</p>
@@ -97,7 +97,6 @@ onMounted(() => {
         id="mobile_chats"
         v-for="(inbox, idx) in useChats.inbox_message"
         :key="(inbox, idx)"
-        class="bg-base-300"
       >
         <router-link :to="`/mobile/chat/${inbox.userId}`">
           <div>
@@ -125,12 +124,12 @@ onMounted(() => {
       </article>
     </template>
     <template v-if="mobile_status">
-      <article class="bg-base-300">
+      <article>
         <p>status</p>
       </article>
     </template>
     <template v-if="mobile_calls">
-      <article class="bg-base-300">
+      <article>
         <p>calls</p>
       </article>
     </template>
