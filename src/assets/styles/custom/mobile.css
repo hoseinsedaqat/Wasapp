@@ -77,3 +77,24 @@
 #mobile_chat_aside {
     width: 100% !important;
 }
+
+
+#mobile_status main:nth-child(1){
+    margin: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#mobile_status main:nth-child(2){
+    margin: 1rem 0.5rem;
+}
+
+#mobile_status main:nth-child(2) .user_status{
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+#mobile_status main:nth-child(2) .user_status img {
+    border: 2px solid forestgreen;
+}

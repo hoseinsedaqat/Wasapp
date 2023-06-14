@@ -86,9 +86,15 @@ onMounted(() => {
     <!-- Chats Call Status -->
     <section id="mobile_section" class="bg-base-100">
       <div>
-        <p @click="show_chats" :class="mobile_chats ? 'for_show_which_part' : ''">Chats</p>
-        <p @click="show_status" :class="mobile_status ? 'for_show_which_part' : ''">Status</p>
-        <p @click="show_calls" :class="mobile_calls ? 'for_show_which_part' : ''">Calls</p>
+        <p @click="show_chats" :class="mobile_chats ? 'for_show_which_part' : ''">
+          Chats
+        </p>
+        <p @click="show_status" :class="mobile_status ? 'for_show_which_part' : ''">
+          Status
+        </p>
+        <p @click="show_calls" :class="mobile_calls ? 'for_show_which_part' : ''">
+          Calls
+        </p>
       </div>
     </section>
     <!-- chats -->
@@ -124,8 +130,62 @@ onMounted(() => {
       </article>
     </template>
     <template v-if="mobile_status">
-      <article>
-        <p>status</p>
+      <article id="mobile_status">
+        <main>
+          <div class="mr-3">
+            <img
+              src="@/assets/images/Users/Hosein_Sedaqat.jpg"
+              alt="my_status"
+              class="w-12 h-12 rounded-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-md">My Status</h3>
+            <p class="text-xs">tap to add status update</p>
+          </div>
+        </main>
+        <main>
+          <p>recent updats</p>
+          <div class="user_status">
+            <div class="mr-3">
+              <img
+                src="@/assets/images/Users/Hosein_Sedaqat.jpg"
+                alt="my_status"
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div>
+              <h3 class="text-md">Hosein Sedaqat</h3>
+              <p class="text-xs">Today, 08:28</p>
+            </div>
+          </div>
+          <div class="user_status">
+            <div class="mr-3">
+              <img
+                src="@/assets/images/Users/Nima_Arefi.jpg"
+                alt="my_status"
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div>
+              <h3 class="text-md">Hosein Sedaqat</h3>
+              <p class="text-xs">yesterday, 18:37</p>
+            </div>
+          </div>
+          <div class="user_status">
+            <div class="mr-3">
+              <img
+                src="@/assets/images/Users/Jimmy_Heller.jpg"
+                alt="my_status"
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div>
+              <h3 class="text-md">Hosein Sedaqat</h3>
+              <p class="text-xs">Today, 14:57</p>
+            </div>
+          </div>
+        </main>
       </article>
     </template>
     <template v-if="mobile_calls">
