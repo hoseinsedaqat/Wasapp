@@ -1,9 +1,29 @@
 <script setup>
+import { onMounted, ref } from "vue";
 import { chats } from "@/stores/chats";
 const useChats = chats();
-function nice(text){
-  alert(`${text}`)
+const mobile_chats = ref(true);
+const mobile_status = ref(false);
+const mobile_calls = ref(false);
+function show_chats() {
+  mobile_chats.value = true;
+  mobile_status.value = false;
+  mobile_calls.value = false;
 }
+function show_status() {
+  mobile_chats.value = false;
+  mobile_status.value = true;
+  mobile_calls.value = false;
+}
+function show_calls() {
+  mobile_chats.value = false;
+  mobile_status.value = false;
+  mobile_calls.value = true;
+}
+
+onMounted(() => {
+  show_chats();
+});
 </script>
 <template>
   <section id="mobile">
@@ -66,40 +86,53 @@ function nice(text){
     <!-- Chats Call Status -->
     <section id="mobile_section">
       <div>
-        <p @click="nice('chats')">Chats</p>
-        <p @click="nice('status')">Status</p>
-        <p @click="nice('calls')">Calls</p>
+        <p @click="show_chats" :class="mobile_chats ? 'for_show_which_part' : ''">Chats</p>
+        <p @click="show_status" :class="mobile_status ? 'for_show_which_part' : ''">Status</p>
+        <p @click="show_calls" :class="mobile_calls ? 'for_show_which_part' : ''">Calls</p>
       </div>
     </section>
-    <article
-      id="mobile_chats"
-      v-for="(inbox, idx) in useChats.inbox_message"
-      :key="(inbox, idx)"
-      class="bg-base-300"
-    >
-      <router-link :to="`/mobile/chat/${inbox.userId}`">
-        <div>
-          <img :src="inbox.userImg" alt="User-Profile" class="w-12 h-12 rounded-full" />
+    <!-- chats -->
+    <template v-if="mobile_chats">
+      <article
+        id="mobile_chats"
+        v-for="(inbox, idx) in useChats.inbox_message"
+        :key="(inbox, idx)"
+        class="bg-base-300"
+      >
+        <router-link :to="`/mobile/chat/${inbox.userId}`">
           <div>
-            <h3 class="text-md">{{ inbox.userName }}</h3>
-            <p class="text-xs">
-              {{
-                inbox.lastMessage.length > 25
-                  ? inbox.lastMessage.substring(0, 26) + "..."
-                  : inbox.lastMessage
-              }}
+            <img :src="inbox.userImg" alt="User-Profile" class="w-12 h-12 rounded-full" />
+            <div>
+              <h3 class="text-md">{{ inbox.userName }}</h3>
+              <p class="text-xs">
+                {{
+                  inbox.lastMessage.length > 25
+                    ? inbox.lastMessage.substring(0, 26) + "..."
+                    : inbox.lastMessage
+                }}
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs">{{ inbox.lastTime }}</p>
+            <p class="my-1">
+              <icon-components
+                :class="'bi bi-chevron-down cursor-pointer'"
+              ></icon-components>
             </p>
           </div>
-        </div>
-        <div>
-          <p class="text-xs">{{ inbox.lastTime }}</p>
-          <p class="my-1">
-            <icon-components
-              :class="'bi bi-chevron-down cursor-pointer'"
-            ></icon-components>
-          </p>
-        </div>
-      </router-link>
-    </article>
+        </router-link>
+      </article>
+    </template>
+    <template v-if="mobile_status">
+      <article class="bg-base-300">
+        <p>status</p>
+      </article>
+    </template>
+    <template v-if="mobile_calls">
+      <article class="bg-base-300">
+        <p>calls</p>
+      </article>
+    </template>
   </section>
 </template>

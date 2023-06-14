@@ -116,3 +116,9 @@
         padding: 1rem 1rem 12rem 1rem;
     }
 }
+
+@media screen and (max-height:600px) {
+    #chat aside:nth-child(3) {
+        width: 100% !important;
+    }
+}
