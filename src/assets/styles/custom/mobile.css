@@ -98,3 +98,37 @@
 #mobile_status main:nth-child(2) .user_status img {
     border: 2px solid forestgreen;
 }
+
+#mobile_calls main:nth-child(1){
+    margin: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#mobile_calls main:nth-child(1) .link-shape{
+    padding: 1rem;
+    background-color: forestgreen;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile_calls main:nth-child(2){
+    margin: 1rem 0.5rem;
+}
+
+#mobile_calls main:nth-child(2) .user_calls {
+    margin: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mobile_calls main:nth-child(2) .user_calls div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
