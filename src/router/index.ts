@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-// import { redirectRoute } from '@/utils/redirectRoute';
+import { redirectRoute } from '@/utils/redirectRoute';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,12 +7,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'HomeView',
+      beforeEnter: redirectRoute,
       component: async () => await import('@/views/Home/HomeView.vue'),
     },
     {
       path: '/web/whatsapp',
       name: 'WebView',
-      // beforeEnter: redirectRoute,
       component: async () => await import('@/views/Web/WebView.vue')
     },
     {
@@ -28,13 +28,11 @@ const router = createRouter({
     {
       path: '/mobile/whatsapp',
       name: 'MobileView',
-      // beforeEnter: redirectRoute,
       component: async () => await import('@/views/Mobile/MobileView.vue')
     },
     {
       path: '/mobile/chat/:id',
       name: 'MobileChatView',
-      // beforeEnter: redirectRoute,
       component: async () => await import('@/views/Mobile/Chat/MobileChat.vue')
     },
   ]

@@ -1,8 +1,4 @@
-/* app */
-
 #app-container {
     overflow-y: hidden;
     width: 70%;
-    /* height: 100vh; */
-
 }

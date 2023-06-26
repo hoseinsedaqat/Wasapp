@@ -1,26 +1,35 @@
+import Mohammreza from '@/assets/images/Users/Mohammadreza_Salari.jpg';
+
 import Zoheir from '@/assets/images/Users/Zoheir_Khonyagar.jpg';
 
 import Elmira from '@/assets/images/Users/Elmira_Jamalian.jpg';
-
-import Mohammreza from '@/assets/images/Users/Mohammadreza_Salari.jpg';
-
-import Jimmy from '@/assets/images/Users/Jimmy_Heller.jpg';
-
-import Nima from '@/assets/images/Users/Nima_Arefi.jpg';
 
 import Mohsen from '@/assets/images/Users/Mohsen_Radoo.jpg';
 
 import Pouya from '@/assets/images/Users/Pouya_Sadeghi.jpg';
 
-import Ali from '@/assets/images/Users/Ali_Alaei.jpg';
-
 import Negar from '@/assets/images/Users/Negar_Jafari.jpg';
+
+import Jimmy from '@/assets/images/Users/Jimmy_Heller.jpg';
 
 import Dan from '@/assets/images/Users/Dan_Abramov.jpg';
 
+import Nima from '@/assets/images/Users/Nima_Arefi.jpg';
+
+import Ali from '@/assets/images/Users/Ali_Alaei.jpg';
+
 import Evan from '@/assets/images/Users/Evan_You.jpg';
 
-export const inbox_message:{userId:string,userName:string,userImg:string,chats:any,lastTime:string,lastMessage:string,userNumber:string,seen:string}[] = [
+export const inbox_message:{
+    userId:string,
+    userName:string,
+    userImg:string,
+    chats:any,
+    lastTime:string,
+    lastMessage:string,
+    userNumber:string,
+    seen:string
+    }[] = [
     {
         userId: 'ce64d829-3268-4af2-9f7d-b13b1ae37f15',
         userName: 'Zoheir Khonyagar',

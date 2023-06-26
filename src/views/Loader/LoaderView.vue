@@ -4,8 +4,8 @@ import { width_check } from "@/utils/widthCheck";
 import { useRouter } from "vue-router";
 import { onMounted, ref } from "vue";
 // data
-const router = useRouter();
 const progress_bar_size = ref(0);
+const router = useRouter();
 // mounted
 onMounted(() => {
   setInterval(() => {

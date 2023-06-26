@@ -1,10 +1,9 @@
 <script setup>
 // import
-import { ref, onMounted } from "vue";
-import HomeView from "@/views/Home/HomeView.vue";
 import LoaderView from "@/views/Loader/LoaderView.vue";
-// import MobileView from "@/views/Mobile/MobileView.vue";
+import HomeView from "@/views/Home/HomeView.vue";
 import { width_check } from "@/utils/widthCheck";
+import { ref, onMounted } from "vue";
 // data
 const progress_loader = ref(true);
 // mounted
