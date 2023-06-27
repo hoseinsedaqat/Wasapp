@@ -1,11 +1,13 @@
 <script setup>
+// import
 import { chats } from "@/stores/chats";
 import { useRoute } from "vue-router";
 import { onMounted, ref } from "vue";
+// data
 const user_chats = ref({});
 const route = useRoute();
 const useChats = chats();
-
+// mounted
 onMounted(() => {
   useChats.inbox_message.forEach((inbox) => {
     if (inbox.userId === route.params.id) {
@@ -109,18 +111,6 @@ onMounted(() => {
           }}</time>
         </div>
       </div>
-      <!-- end -->
-      <!-- <div class="chat chat-end" v-for="x in 5" :key="x">
-        <div class="chat-image avatar">
-          <div class="w-10 rounded-full">
-            <img src="@/assets/images/Users/Hosein_Sedaqat.jpg" />
-          </div>
-        </div>
-        <div class="chat-bubble">I hate you!</div>
-        <div class="chat-footer">
-          <time class="text-xs text-white">12:46</time>
-        </div>
-      </div> -->
     </aside>
     <aside class="bg-base-200" id="mobile_chat_aside">
       <main>

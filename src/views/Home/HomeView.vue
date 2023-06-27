@@ -1,5 +1,7 @@
 <script setup>
+// import
 import { chats } from "@/stores/chats";
+// data
 const useChats = chats();
 </script>
 

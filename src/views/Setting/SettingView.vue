@@ -1,13 +1,15 @@
 <script setup>
+// import
 import { useRoute, useRouter } from "vue-router";
 import { width_check } from "@/utils/widthCheck";
 import { chats } from "@/stores/chats";
 import { onMounted, ref } from "vue";
+// data
 const router = useRouter();
 const user_chats = ref({});
 const route = useRoute();
 const useChats = chats();
-
+// methods
 function back_to_chat() {
   if(!width_check()){
     router.push(`/chat/${route.params.id}`);

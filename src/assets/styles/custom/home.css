@@ -1,17 +1,14 @@
 #home-container {
     width: 30%;
-    /* margin: 1rem 2rem 0 2rem; */
     height: 100vh;
 }
 
 /* Aside Header */
-
 #home-container aside:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    /* border-radius: 5px 5px 0 0; */
 }
 
 #home-container aside:nth-child(1) main:nth-child(2) {
@@ -24,7 +21,6 @@
 }
 
 /* Aside Input */
-
 #home-container aside:nth-child(2) {
     width: 100%;
     padding: 0.8rem;

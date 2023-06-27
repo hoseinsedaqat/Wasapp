@@ -1,10 +1,13 @@
 <script setup>
-import { onMounted, ref } from "vue";
+// import
 import { chats } from "@/stores/chats";
-const useChats = chats();
-const mobile_chats = ref(true);
+import { onMounted, ref } from "vue";
+// data
 const mobile_status = ref(false);
 const mobile_calls = ref(false);
+const mobile_chats = ref(true);
+const useChats = chats();
+// methods
 function show_chats() {
   mobile_chats.value = true;
   mobile_status.value = false;
@@ -20,7 +23,7 @@ function show_calls() {
   mobile_status.value = false;
   mobile_calls.value = true;
 }
-
+// mounted
 onMounted(() => {
   show_chats();
 });
