@@ -30,6 +30,7 @@ onMounted(() => {
 
 <template>
   <section id="chat">
+    <!-- Chat Header -->
     <aside class="bg-base-200">
       <router-link :to="`/setting/${user_chats.userId}`">
       <main>
@@ -93,7 +94,7 @@ onMounted(() => {
       </main>
     </aside>
     <aside>
-      <!-- start,end -->
+      <!-- start,end chats -->
       <div
         class="chat"
         v-for="chats in user_chats.chats"
