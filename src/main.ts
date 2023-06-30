@@ -5,6 +5,10 @@ import IconComponents from '@/components/IconComponents.vue';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import 'sweetalert2/dist/sweetalert2.min.css';
+
+import VueSweetalert2 from 'vue-sweetalert2';
+
 import "vue-toastification/dist/index.css";
 
 import Toast from "vue-toastification";
@@ -28,6 +32,7 @@ const app = createApp(App);
 app.component('IconComponents',IconComponents);
 // plugins
 app.use(Toast, vue_toast_notification);
+app.use(VueSweetalert2);
 app.use(createPinia());
 app.use(router);
 // main app

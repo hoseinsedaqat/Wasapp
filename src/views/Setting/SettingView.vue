@@ -17,7 +17,7 @@ function back_to_chat() {
     router.push(`/mobile/chat/${route.params.id}`);
   }
 }
-
+// mounted
 onMounted(() => {
   useChats.inbox_message.forEach((inbox) => {
     if (inbox.userId === route.params.id) {

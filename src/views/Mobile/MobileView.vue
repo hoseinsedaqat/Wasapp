@@ -1,11 +1,12 @@
 <script setup>
 // import
+import { onMounted, ref, inject } from "vue";
 import { chats } from "@/stores/chats";
-import { onMounted, ref } from "vue";
 // data
 const mobile_status = ref(false);
 const mobile_calls = ref(false);
 const mobile_chats = ref(true);
+const swal = inject('$swal');
 const useChats = chats();
 // methods
 function show_chats() {
@@ -22,6 +23,14 @@ function show_calls() {
   mobile_chats.value = false;
   mobile_status.value = false;
   mobile_calls.value = true;
+}
+async function viewStatus(img){
+  swal({
+    imageWidth: 300,
+    imageHeight: 300,
+    imageUrl: img,
+    showConfirmButton: false,
+  })
 }
 // mounted
 onMounted(() => {
@@ -149,43 +158,17 @@ onMounted(() => {
         </main>
         <main>
           <p>recent updats</p>
-          <div class="user_status">
+          <div v-for="(status,idx) in useChats.inbox_message" :key="(status,idx)" class="user_status" @click="viewStatus(status.statusImg)">
             <div class="mr-3">
               <img
-                src="@/assets/images/Users/Hosein_Sedaqat.jpg"
+                :src="status.userImg"
                 alt="my_status"
                 class="w-12 h-12 rounded-full"
               />
             </div>
             <div>
-              <h3 class="text-md">Hosein Sedaqat</h3>
-              <p class="text-xs">Today, 08:28</p>
-            </div>
-          </div>
-          <div class="user_status">
-            <div class="mr-3">
-              <img
-                src="@/assets/images/Users/Nima_Arefi.jpg"
-                alt="my_status"
-                class="w-12 h-12 rounded-full"
-              />
-            </div>
-            <div>
-              <h3 class="text-md">Hosein Sedaqat</h3>
-              <p class="text-xs">yesterday, 18:37</p>
-            </div>
-          </div>
-          <div class="user_status">
-            <div class="mr-3">
-              <img
-                src="@/assets/images/Users/Jimmy_Heller.jpg"
-                alt="my_status"
-                class="w-12 h-12 rounded-full"
-              />
-            </div>
-            <div>
-              <h3 class="text-md">Hosein Sedaqat</h3>
-              <p class="text-xs">Today, 14:57</p>
+              <h3 class="text-md">{{status.userName}}</h3>
+              <p class="text-xs">Today, {{ status.lastTime }}</p>
             </div>
           </div>
         </main>

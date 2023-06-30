@@ -28,7 +28,8 @@ export const inbox_message:{
     lastTime:string,
     lastMessage:string,
     userNumber:string,
-    seen:string
+    seen:string,
+    statusImg:string
     }[] = [
     {
         userId: 'ce64d829-3268-4af2-9f7d-b13b1ae37f15',
@@ -79,7 +80,8 @@ export const inbox_message:{
         lastTime: '23:56',
         lastMessage: `The quick brown fox jumps over the lazy dog.`,
         userNumber: '4176484569',
-        seen: 'online'
+        seen: 'online',
+        statusImg: Evan
     },
     {
         userId: 'bf214515-2b51-4c7e-b253-b625fcfaa922',
@@ -106,7 +108,8 @@ export const inbox_message:{
         lastTime: '22:43',
         lastMessage: `Life is a journey, not a destination.`,
         userNumber: '6022653793',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: '01d021ef-ea0a-4e68-bd60-1856028a3f9c',
@@ -133,7 +136,8 @@ export const inbox_message:{
         lastTime: '21:05',
         lastMessage: `In three words I can sum up everything I've learned about life: it goes`,
         userNumber: '2297241141',
-        seen: 'online'
+        seen: 'online',
+        statusImg: Evan
     },
     {
         userId: '507208ea-9925-4492-9ca3-da0f9956cda4',
@@ -152,7 +156,8 @@ export const inbox_message:{
         lastTime: '20:20',
         lastMessage: `The only way to do great work is to love what you do`,
         userNumber: '9496315667',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: 'dfafbce0-61a2-4488-905b-cdf9342247e3',
@@ -171,7 +176,8 @@ export const inbox_message:{
         lastTime: '19:35',
         lastMessage: `Life is like a camera, focus on the good times.`,
         userNumber: '6196452868',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: '523dc8c8-de72-41e5-9467-c570698360d4',
@@ -190,7 +196,8 @@ export const inbox_message:{
         lastTime: '18:30',
         lastMessage: `Time flies when you're having fun.`,
         userNumber: '8504915324',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: 'f643b08e-ca4d-41cd-90d4-82595c77bbb8',
@@ -217,7 +224,8 @@ export const inbox_message:{
         lastTime: '14:22',
         lastMessage: `Believe you can and you're halfway there.`,
         userNumber: '6269603540',
-        seen: 'online'
+        seen: 'online',
+        statusImg: Evan
     },
     {
         userId: 'ca87b859-c789-4997-b703-21d0335c95a4',
@@ -236,7 +244,8 @@ export const inbox_message:{
         lastTime: '13:32',
         lastMessage: `Actions speak louder than words.`,
         userNumber: '3862595150',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: 'e4eafb80-c57c-4144-93f1-7e8ce70d6baa',
@@ -255,7 +264,8 @@ export const inbox_message:{
         lastTime: '13:01',
         lastMessage: `Success is not final, failure is not fatal: it is the courage to continue that counts.`,
         userNumber: '9073391716',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: '01d303e9-0709-47c7-9f45-85fad5e971aa',
@@ -274,7 +284,8 @@ export const inbox_message:{
         lastTime: '12:05',
         lastMessage: `Life is 10% what happens to us and 90% how we react to it.`,
         userNumber: '4234183602',
-        seen: 'offline'
+        seen: 'offline',
+        statusImg: Evan
     },
     {
         userId: '9e614684-8b67-4e54-ad11-a08fcf747a34',
@@ -293,6 +304,7 @@ export const inbox_message:{
         lastTime: '06:30',
         lastMessage: `The best way to predict the future is to create it.`,
         userNumber: '4804719551',
-        seen: 'online'
+        seen: 'online',
+        statusImg: Evan
     },
 ]
