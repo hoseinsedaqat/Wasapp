@@ -36,6 +36,8 @@
     border-bottom: 1px solid forestgreen;
 }
 
+/* Mobile Chat */
+
 #mobile_chats:last-child {
     padding: 0 0 3rem 0;
 }
@@ -76,6 +78,7 @@
     width: 100% !important;
 }
 
+/* Mobile Status */
 
 #mobile_status main:nth-child(1){
     margin: 1rem 0.5rem;
@@ -96,6 +99,12 @@
 #mobile_status main:nth-child(2) .user_status img {
     border: 2px solid forestgreen;
 }
+
+#mobile_status main:nth-child(2) .user_status:last-child {
+    padding: 0 0 3rem 0;
+}
+
+/* Mobile Calls */
 
 #mobile_calls main:nth-child(1){
     margin: 1rem 0.5rem;

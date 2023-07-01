@@ -1,3 +1,4 @@
+// Users
 import Mohammreza from '@/assets/images/Users/Mohammadreza_Salari.jpg';
 
 import Zoheir from '@/assets/images/Users/Zoheir_Khonyagar.jpg';
@@ -19,6 +20,29 @@ import Nima from '@/assets/images/Users/Nima_Arefi.jpg';
 import Ali from '@/assets/images/Users/Ali_Alaei.jpg';
 
 import Evan from '@/assets/images/Users/Evan_You.jpg';
+
+// Users_Status
+import Status_10 from '../assets/images/User_Status/Status_10.jpg';
+
+import Status_11 from '../assets/images/User_Status/Status_11.jpg';
+
+import Status_1 from '../assets/images/User_Status/Status_1.jpg';
+
+import Status_2 from '../assets/images/User_Status/Status_2.jpg';
+
+import Status_3 from '../assets/images/User_Status/Status_3.jpg';
+
+import Status_4 from '../assets/images/User_Status/Status_4.jpg';
+
+import Status_5 from '../assets/images/User_Status/Status_5.jpg';
+
+import Status_6 from '../assets/images/User_Status/Status_6.jpg';
+
+import Status_7 from '../assets/images/User_Status/Status_7.jpg';
+
+import Status_8 from '../assets/images/User_Status/Status_8.jpg';
+
+import Status_9 from '../assets/images/User_Status/Status_9.jpg';
 
 export const inbox_message:{
     userId:string,
@@ -81,7 +105,7 @@ export const inbox_message:{
         lastMessage: `The quick brown fox jumps over the lazy dog.`,
         userNumber: '4176484569',
         seen: 'online',
-        statusImg: Evan
+        statusImg: Status_1
     },
     {
         userId: 'bf214515-2b51-4c7e-b253-b625fcfaa922',
@@ -109,7 +133,7 @@ export const inbox_message:{
         lastMessage: `Life is a journey, not a destination.`,
         userNumber: '6022653793',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_2
     },
     {
         userId: '01d021ef-ea0a-4e68-bd60-1856028a3f9c',
@@ -137,7 +161,7 @@ export const inbox_message:{
         lastMessage: `In three words I can sum up everything I've learned about life: it goes`,
         userNumber: '2297241141',
         seen: 'online',
-        statusImg: Evan
+        statusImg: Status_3
     },
     {
         userId: '507208ea-9925-4492-9ca3-da0f9956cda4',
@@ -157,7 +181,7 @@ export const inbox_message:{
         lastMessage: `The only way to do great work is to love what you do`,
         userNumber: '9496315667',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_4
     },
     {
         userId: 'dfafbce0-61a2-4488-905b-cdf9342247e3',
@@ -177,7 +201,7 @@ export const inbox_message:{
         lastMessage: `Life is like a camera, focus on the good times.`,
         userNumber: '6196452868',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_5
     },
     {
         userId: '523dc8c8-de72-41e5-9467-c570698360d4',
@@ -197,7 +221,7 @@ export const inbox_message:{
         lastMessage: `Time flies when you're having fun.`,
         userNumber: '8504915324',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_6
     },
     {
         userId: 'f643b08e-ca4d-41cd-90d4-82595c77bbb8',
@@ -225,7 +249,7 @@ export const inbox_message:{
         lastMessage: `Believe you can and you're halfway there.`,
         userNumber: '6269603540',
         seen: 'online',
-        statusImg: Evan
+        statusImg: Status_7
     },
     {
         userId: 'ca87b859-c789-4997-b703-21d0335c95a4',
@@ -245,7 +269,7 @@ export const inbox_message:{
         lastMessage: `Actions speak louder than words.`,
         userNumber: '3862595150',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_8
     },
     {
         userId: 'e4eafb80-c57c-4144-93f1-7e8ce70d6baa',
@@ -265,7 +289,7 @@ export const inbox_message:{
         lastMessage: `Success is not final, failure is not fatal: it is the courage to continue that counts.`,
         userNumber: '9073391716',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_9
     },
     {
         userId: '01d303e9-0709-47c7-9f45-85fad5e971aa',
@@ -285,7 +309,7 @@ export const inbox_message:{
         lastMessage: `Life is 10% what happens to us and 90% how we react to it.`,
         userNumber: '4234183602',
         seen: 'offline',
-        statusImg: Evan
+        statusImg: Status_10
     },
     {
         userId: '9e614684-8b67-4e54-ad11-a08fcf747a34',
@@ -305,6 +329,6 @@ export const inbox_message:{
         lastMessage: `The best way to predict the future is to create it.`,
         userNumber: '4804719551',
         seen: 'online',
-        statusImg: Evan
+        statusImg: Status_11
     },
 ]

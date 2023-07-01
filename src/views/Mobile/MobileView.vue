@@ -24,12 +24,14 @@ function show_calls() {
   mobile_status.value = false;
   mobile_calls.value = true;
 }
-async function viewStatus(img){
+async function viewStatus(img,name){
   swal({
     imageWidth: 300,
     imageHeight: 300,
     imageUrl: img,
     showConfirmButton: false,
+    text: `${name}_Status`,
+    backdrop: 'rgba(0,0,0,90%)'
   })
 }
 // mounted
@@ -158,7 +160,7 @@ onMounted(() => {
         </main>
         <main>
           <p>recent updats</p>
-          <div v-for="(status,idx) in useChats.inbox_message" :key="(status,idx)" class="user_status" @click="viewStatus(status.statusImg)">
+          <div v-for="(status,idx) in useChats.inbox_message" :key="(status,idx)" class="user_status" @click="viewStatus(status.statusImg,status.userName)">
             <div class="mr-3">
               <img
                 :src="status.userImg"
