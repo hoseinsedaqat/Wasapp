@@ -113,7 +113,7 @@
     }
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-height:599px) {
     #chat aside:nth-child(3) {
         width: 100% !important;
     }
