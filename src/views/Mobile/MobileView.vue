@@ -51,18 +51,18 @@ onMounted(() => {
           <icon-components :class="'bi bi-camera-fill text-xl'"></icon-components>
         </div>
         <div>
-          <a href="#search_message">
+          <a href="#search">
             <icon-components
               :class="'bi bi-search text-xl cursor-pointer'"
             ></icon-components>
           </a>
         </div>
         <!-- Modal Component -->
-        <div class="modal" id="search_message">
+        <div class="modal" id="search">
           <div class="modal-box">
             <div class="modal-action">
               <a href="#" class="modal-skelton">
-                <h3 class="text-white text-lg">Search Message</h3>
+                <h3 class="text-white text-lg">Search</h3>
                 <icon-components
                   :class="'bi bi-x text-3xl cursor-pointer'"
                 ></icon-components>
