@@ -189,54 +189,18 @@ onMounted(() => {
         </main>
         <main>
           <p class="text-sm text-white">Recent</p>
-          <div class="user_calls">
+          <div class="user_calls" v-for="(calls,idx) in useChats.inbox_message" :key="(calls,idx)">
             <div>
               <div class="mr-2">
                 <img
-                  src="@/assets/images/Users/Hosein_Sedaqat.jpg"
+                  :src="calls.userImg"
                   alt="my_status"
                   class="w-12 h-12 rounded-full"
                 />
               </div>
               <div>
-                <h3 class="text-sm">Hosein Sedaqat</h3>
-                <p class="text-xs">May 26, 14:57</p>
-              </div>
-            </div>
-            <div>
-              <icon-components :class="'bi bi-camera-video-fill cursor-pointer text-green-500'"></icon-components>
-            </div>
-          </div>
-          <div class="user_calls">
-            <div>
-              <div class="mr-2">
-                <img
-                  src="@/assets/images/Users/Nima_Arefi.jpg"
-                  alt="my_status"
-                  class="w-12 h-12 rounded-full"
-                />
-              </div>
-              <div>
-                <h3 class="text-sm">Hosein Sedaqat</h3>
-                <p class="text-xs">May 26, 14:57</p>
-              </div>
-            </div>
-            <div>
-              <icon-components :class="'bi bi-camera-video-fill cursor-pointer text-green-500'"></icon-components>
-            </div>
-          </div>
-          <div class="user_calls">
-            <div>
-              <div class="mr-2">
-                <img
-                  src="@/assets/images/Users/Elmira_Jamalian.jpg"
-                  alt="my_status"
-                  class="w-12 h-12 rounded-full"
-                />
-              </div>
-              <div>
-                <h3 class="text-sm">Hosein Sedaqat</h3>
-                <p class="text-xs">May 26, 14:57</p>
+                <h3 class="text-sm">{{ calls.userName }}</h3>
+                <p class="text-xs">May {{ Math.abs(idx - 11) }}, {{ calls.lastTime }}</p>
               </div>
             </div>
             <div>
