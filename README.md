@@ -10,7 +10,7 @@
 </div>
 <p>Small Screen View</p>
 <div align="center">
-  <img width=100% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/251536711-9087d2ca-a757-4d57-8c2a-5ed6a02f6296.png" />
+  <img width=50% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/251536711-9087d2ca-a757-4d57-8c2a-5ed6a02f6296.png" />
 </div>
 ## Recommended IDE Setup
 
