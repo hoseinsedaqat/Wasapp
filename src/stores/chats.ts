@@ -29,7 +29,7 @@ export const chats = defineStore('chats', {
                         })
                     }
             })
-            // add to utils
+            // for following message,when new chat added
             document.querySelector('#chat aside:nth-child(2)')?.scrollTo(0,9999)
             }
             this.add_message = ""
