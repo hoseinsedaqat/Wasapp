@@ -12,6 +12,18 @@
 <div align="center">
   <img width=50% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/251536711-9087d2ca-a757-4d57-8c2a-5ed6a02f6296.png" />
 </div>
+<p>Small Screen Setting View</p>
+<div align="center">
+  <img width=50% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/251539147-429887d9-9668-4f90-bb76-9314de2883e6.png" />
+</div>
+<p>Small Screen Status View</p>
+<div align="center">
+  <img width=50% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/251539160-28033e98-ba03-4a38-b7c5-a8e6c60eb343.png" />
+</div>
+<p>Small Screen Calls View</p>
+<div align="center">
+  <img width=50% height="100%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/71232870/251539165-e28d7fce-6c9b-4454-91aa-4ea7eda921ae.png" />
+</div>
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
