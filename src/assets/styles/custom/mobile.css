@@ -29,6 +29,7 @@
 
 #mobile_section div p {
     padding: 0 2rem;
+    cursor: pointer;
 }
 
 .for_show_which_part {

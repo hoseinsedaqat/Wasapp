@@ -1,13 +1,13 @@
 <script setup>
 // import
-import { onMounted, ref, inject } from "vue";
-import { chats } from "@/stores/chats";
+import MobileStatus from "./Components/MobileStatus.vue";
+import MobileChats from "./Components/MobileChats.vue";
+import MobileCalls from "./Components/MobileCalls.vue";
+import { onMounted, ref } from "vue";
 // data
 const mobile_status = ref(false);
 const mobile_calls = ref(false);
 const mobile_chats = ref(true);
-const swal = inject('$swal');
-const useChats = chats();
 // methods
 function show_chats() {
   mobile_chats.value = true;
@@ -23,16 +23,6 @@ function show_calls() {
   mobile_chats.value = false;
   mobile_status.value = false;
   mobile_calls.value = true;
-}
-async function viewStatus(img,name){
-  swal({
-    imageWidth: 300,
-    imageHeight: 300,
-    imageUrl: img,
-    showConfirmButton: false,
-    text: `${name}_Status`,
-    backdrop: 'rgba(0,0,0,90%)'
-  })
 }
 // mounted
 onMounted(() => {
@@ -112,103 +102,10 @@ onMounted(() => {
       </div>
     </section>
     <!-- chats -->
-    <template v-if="mobile_chats">
-      <article
-        id="mobile_chats"
-        v-for="(inbox, idx) in useChats.inbox_message"
-        :key="(inbox, idx)"
-      >
-        <router-link :to="`/mobile/chat/${inbox.userId}`">
-          <div>
-            <img :src="inbox.userImg" alt="User-Profile" class="w-12 h-12 rounded-full" />
-            <div>
-              <h3 class="text-md">{{ inbox.userName }}</h3>
-              <p class="text-xs">
-                {{
-                  inbox.lastMessage.length > 25
-                    ? inbox.lastMessage.substring(0, 26) + "..."
-                    : inbox.lastMessage
-                }}
-              </p>
-            </div>
-          </div>
-          <div>
-            <p class="text-xs">{{ inbox.lastTime }}</p>
-            <p class="my-1">
-              <icon-components
-                :class="'bi bi-chevron-down cursor-pointer'"
-              ></icon-components>
-            </p>
-          </div>
-        </router-link>
-      </article>
-    </template>
-    <template v-if="mobile_status">
-      <article id="mobile_status">
-        <main>
-          <div class="mr-3">
-            <img
-              src="@/assets/images/Users/Hosein_Sedaqat.jpg"
-              alt="my_status"
-              class="w-12 h-12 rounded-full"
-            />
-          </div>
-          <div>
-            <h3 class="text-md">My Status</h3>
-            <p class="text-xs">tap to add status update</p>
-          </div>
-        </main>
-        <main>
-          <p>recent updats</p>
-          <div v-for="(status,idx) in useChats.inbox_message" :key="(status,idx)" class="user_status" @click="viewStatus(status.statusImg,status.userName)">
-            <div class="mr-3">
-              <img
-                :src="status.userImg"
-                alt="my_status"
-                class="w-12 h-12 rounded-full"
-              />
-            </div>
-            <div>
-              <h3 class="text-md">{{status.userName}}</h3>
-              <p class="text-xs">Today, {{ status.lastTime }}</p>
-            </div>
-          </div>
-        </main>
-      </article>
-    </template>
-    <template v-if="mobile_calls">
-      <article id="mobile_calls">
-        <main>
-          <div class="link-shape mr-2">
-            <icon-components :class="'bi bi-link-45deg cursor-pointer'"></icon-components>
-          </div>
-          <div>
-            <h3 class="text-md text-white">Create call link</h3>
-            <p class="text-xs">Share a link for your WhatsApp call</p>
-          </div>
-        </main>
-        <main>
-          <p class="text-sm text-white">Recent</p>
-          <div class="user_calls" v-for="(calls,idx) in useChats.inbox_message" :key="(calls,idx)">
-            <div>
-              <div class="mr-2">
-                <img
-                  :src="calls.userImg"
-                  alt="my_status"
-                  class="w-12 h-12 rounded-full"
-                />
-              </div>
-              <div>
-                <h3 class="text-sm">{{ calls.userName }}</h3>
-                <p class="text-xs">May {{ Math.abs(idx - 11) }}, {{ calls.lastTime }}</p>
-              </div>
-            </div>
-            <div>
-              <icon-components :class="'bi bi-camera-video-fill cursor-pointer text-green-500'"></icon-components>
-            </div>
-          </div>
-        </main>
-      </article>
-    </template>
+    <mobile-chats v-if="mobile_chats"></mobile-chats>
+    <!-- Status -->
+    <mobile-status v-if="mobile_status"></mobile-status>
+    <!-- Calls -->
+    <mobile-calls v-if="mobile_calls"></mobile-calls>
   </section>
 </template>
